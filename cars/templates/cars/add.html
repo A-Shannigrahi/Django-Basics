@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<div class='container'>
+<h1>Add entry to the list</h1>
+    <form action="" method="POST">
+    {% csrf_token %}
+        <div class="form-group">
+            
+            Brand:<input class="form-control" type="text" id="brand1" name="brand">
+        </div>
+        <div class="form_group">
+            
+            Year:<input class="form-control" type="text" id="year1" name="year">
+        </div>
+        
+        <input class="btn btn-primary" type="submit">
+
+</div>
+{%endblock%}
